@@ -1,23 +1,24 @@
+
 const places = [
     {
         id: 0,
         title: "Cox's Bazar",
-        description: "Cox's Bazar is a city, fishing port, tourism centre and district headquarters in southeastern Bangladesh. it is famous mostly for its long natural sandy beach, and it ....",
-        img: "https://i.ibb.co/K5HvNLV/Rectangle-1.png"
+        description: "Cox's Bazar sea beach is the longest sea beach in the world, 120 km long, having no 2nd instance. The wavy water of Bay of Bengal touches the beach throughout this 120 km.",
+        img: "https://i.ibb.co/yfkMkRF/Rectangle-1.png"
 
     },
     {
         id: 1,
         title: "Sreemangal",
-        description: "Sreemangal is the tea capital of Bangladesh. This hilly area, with tea estates,lemon orchards, pineapple, is one of the most picturesque and enjoyable parts of the country.",
-        img: "https://i.ibb.co/S7mwg40/Sreemongol.png"
+        description: "Sreemangal, The Tea Capital of Bangladesh A large portion of world's highest quality tea is grown here. It is also called the city of 'two leaves and a bud. Sreemangal is famous for nature, forests and wildlife.",
+        img: "https://i.ibb.co/YR6f4zG/Sreemongol.png"
 
     },
     {
         id: 1,
         title: "Sundorbon",
-        description: "Sundorbon is the largest single block of tidal, halophytic mangrove forests in the world. Apart from being a unique largest mangrove eco-system of the world, the Sundarbans has the world's largest deltaic mangrove forests and is also home to one of India's most iconic wildlife species - the Royal Bengal Tiger.",
-        img: "https://i.ibb.co/JsWB10D/sundorbon.png"
+        description: "The Sundarbans is a mangrove area in the delta formed by the confluence of the Ganges, Brahmaputra and Meghna Rivers in the Bay of Bengal. ... It comprises closed and open mangrove forests, agriculturally used land, mudflats and barren land, and is intersected by multiple tidal streams and channels.",
+        img: "https://i.ibb.co/YdJP72j/sundorbon.png"
 
     },
 

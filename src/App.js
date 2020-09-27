@@ -25,12 +25,12 @@ function App() {
   });
 
   const [loggedIn, setLoggedIn] = useState(false);
-  const [logUpdateUserName, setLogUpdateUserName] = useState();
+  const [logNewUserName, setLogNewUserName] = useState();
 
 
 
   return (
-    <UserContext.Provider value={[placeArea, setPlaceArea, loggedIn, setLoggedIn, logUpdateUserName, setLogUpdateUserName]}>
+    <UserContext.Provider value={[placeArea, setPlaceArea, loggedIn, setLoggedIn, logNewUserName, setLogNewUserName]}>
       <Router>
         <Switch>
           <Route exact path="/">

@@ -14,7 +14,7 @@ import { useHistory, useLocation } from "react-router-dom";
 firebase.initializeApp(firebaseConfig);
 
 const LoginAuth = () => {
-  const [placeArea, setPlaceArea, loggedIn, setLoggedIn, logUpdateUserName, setLogUpdateUserName] = useContext(UserContext);
+  const [placeArea, setPlaceArea, loggedIn, setLoggedIn, logNewUserName, setLogNewUserName] = useContext(UserContext);
 
   const [submit, setSubmit] = useState("");
   const [user, setUser] = useState({});
@@ -38,7 +38,7 @@ const LoginAuth = () => {
             setConfirmationError(false);
             setUser({ ...user, signupError: "" });
 
-            setLogUpdateUserName(user.fullname);
+            setLogNewUserName(user.fullname);
             updateName(user.fullname);
             setLoggedIn(true);
             history.replace(from);
@@ -73,7 +73,7 @@ const LoginAuth = () => {
     firebase.auth().signInWithEmailAndPassword(user.email, user.password)
       .then((res) => {
         const newUser = res.user.displayName;
-        setLogUpdateUserName(newUser);
+        setLogNewUserName(newUser);
         setLoggedIn(true);
         history.replace(from);
 
@@ -91,7 +91,7 @@ const LoginAuth = () => {
     firebase.auth().signInWithPopup(provider)
       .then((res) => {
         const newUser = res.user.displayName;
-        setLogUpdateUserName(newUser);
+        setLogNewUserName(newUser);
         setLoggedIn(true);
         history.replace(from);
       })
@@ -107,7 +107,7 @@ const LoginAuth = () => {
     firebase.auth().signInWithPopup(provider)
       .then((res) => {
         const newUser = res.user.displayName;
-        setLogUpdateUserName(newUser);
+        setLogNewUserName(newUser);
         setLoggedIn(true);
         history.replace(from);
       })

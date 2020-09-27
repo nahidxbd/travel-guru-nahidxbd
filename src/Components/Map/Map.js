@@ -6,8 +6,9 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>;
 class Map extends Component {
   static defaultProps = {
     center: {
-      lat: 21.4242785,
-      lng: 91.9315097
+      lat: 21.9497 ,
+      lng:  89.1833
+      
     },
     zoom: 11
   };
@@ -23,8 +24,10 @@ class Map extends Component {
           defaultZoom={this.props.zoom}
         >
           <AnyReactComponent
-            lat={21.4242785}
-            lng={91.9315097}
+            lat={21.9497}
+            lng={89.1833}
+            
+            
 
             text="My Marker"
           />

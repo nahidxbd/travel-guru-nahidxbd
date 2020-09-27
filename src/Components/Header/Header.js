@@ -8,7 +8,7 @@ import { UserContext } from "../../App";
 import "./Header.css";
 
 const Header = (props) => {
-  const [placeArea, setPlaceArea, loggedIn, setLoggedIn, logUpdateUserName, setLogUpdateUserName] = useContext(UserContext);
+  const [placeArea, setPlaceArea, loggedIn, setLoggedIn, logNewUserName, setLogNewUserName] = useContext(UserContext);
 
 
   return (
@@ -33,7 +33,7 @@ const Header = (props) => {
 
       {
         loggedIn ?
-          <h4> <span style={{ color: "orange" }}>Welcome, {logUpdateUserName} </span></h4>
+          <h4> <span style={{ color: "green" }}>Hello, {logNewUserName}-to Travel Guru </span></h4>
           : <>
             <Link style={{ textDecoration: "none", color: "white" }} to="/login">
               <Button size="small" style={{ background: "orange", color: "white" }}>
